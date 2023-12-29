@@ -1,0 +1,126 @@
+body{
+  
+    background-color: #635633;
+    
+    
+}
+
+header{
+      
+    background-color: #fffef2;
+    border: 5px solid #868683;
+    width: 350px;
+    height: 700px;
+    margin: 0 auto;
+margin-top: 100px;
+}
+
+
+.middle{
+    text-align: center;
+
+}
+
+.middle h1{
+    font-size: 70px;
+    font-weight: bold;
+}
+
+.middle ul{
+    position: relative;
+    top: -150px;
+    font-size: 30px;
+}
+header p{
+  position: relative;
+  top: -100px;
+  left: 150px;
+  font-weight: bold;
+  }
+
+.middle img{
+    position: relative;
+    top: -80px;
+    left: 80px;
+}
+
+.middle span{
+  writing-mode:vertical-lr;
+  position: relative;
+    top: -390px;
+    left: 160px;
+    font-weight: bold;
+  
+
+}
+.middle span{
+
+    z-index: 1;
+  transform-origin: left center;
+  transition-duration: 1s;
+  transition-timing-function: ease-in;
+}
+
+.middle span:hover {
+  transform: rotateY(-180deg);
+}
+
+
+a:link{
+    text-decoration: none;
+    color: black;
+}
+
+a:hover{ text-decoration: none;
+    color: black;
+
+}
+
+a:visited{text-decoration: none;
+    color: black;
+
+}
+
+a:active{text-decoration: none;
+    color: black;}
+
+    *{padding:0;margin:0}
+li{list-style:none}
+a{text-decoration:none;font-size:20px}
+
+.menu { width: 300px;
+    overflow: hidden;
+    margin: 100px auto;
+    
+  }
+  
+  .menu > li {
+    width: 100%;
+    text-align: center;
+    line-height: 30px;
+    
+  }
+  
+  .menu a {
+    color: #181616;
+    font-size: 18px;
+  }
+  
+  .submenu > li {
+    line-height: 30px;
+    background-color: #e8ddc1;
+    font-size: 12px;
+  }
+  
+  .submenu {
+    height: 0; /*ul의 높이를 안보이게 처리*/
+    overflow: hidden;
+  }
+  .menu > li:hover {
+    background-color: #875b38;
+    transition-duration: 0.5s;
+  }
+  
+  .menu > li:hover .submenu {
+    height: 500px; /*서브메뉴 li한개의 높이 50*5*/
+    transition-duration: 1s;}

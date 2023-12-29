@@ -1,0 +1,159 @@
+*{padding:0;margin:0}
+li{list-style:none}
+a{text-decoration:none;font-size:20px}
+
+
+  
+  
+  .menu > li:hover .submenu {
+    height: 300px; /*서브메뉴 li한개의 높이 50*5*/
+    transition-duration: 1s;}
+
+    body{ margin: 0 auto;
+        padding: 30px;
+    width: 1080px;
+       border: 1px solid #875b38;
+    }
+
+a:link{
+   color: #875b38;
+   font-size: 15px;
+}
+
+a:hover{
+   color:#875b38;
+}
+
+a:visited{
+   color: #875b38;
+}
+    header{
+        height: 120px;
+        
+    }
+ header h1{
+    text-align: center;
+    font-size: 50px;
+    
+    
+ }
+ header { margin: 0 auto; width: 100%; height: 100px; position: relative; background-color: none; }
+
+ header input{
+    float: right;
+    border-radius: 150px;
+    border:1px solid #875b38;
+    color: #ccc;
+
+    width: 200px;
+    height: 30px;
+    padding: 10px;
+    margin-right: 25px;
+    position: relative;
+    top: -80px;
+   
+ }
+ span{
+margin-right: 30px;
+margin-top: 8px;
+  display: flex;
+  justify-content: end;
+  font-weight: bold;
+ }
+
+nav{clear: both;
+padding-left:10PX ;
+position: fixed;
+}
+ nav { width: 600px; position: absolute; top: 135px; left: 380px;}
+ nav > ul { overflow: hidden; }
+ nav > ul > li { float: left; width: 25%; text-align: center; }
+ nav > ul > li > a { display: inline-block; padding: 12px 0px; width: 100%;  color: #875b38; font-weight: bold; }
+ nav > ul > li:hover > a { color: red;  background: #f1f1f1; }
+
+ .submenu { display: none; position: absolute; z-index: 99; text-align: center; background: #f1f1f1; }
+ .submenu > li > a { display: inline-block; padding: 14px 0px; color: #875b38; width: 150px ; font-size: 15px;  }
+ .submenu > li > a:hover { background: #ccc; }
+ * { margin: 0; padding: 0; box-sizing: border-box;  }
+ 
+#duck{
+  border:1px solid #875b38;
+  
+  width: 1020px;
+  height: 50px;
+}
+
+ figure{ clear: both;
+    margin-top: 10px;
+   
+ }
+
+ section{ clear: both;
+  
+   
+   
+   
+ 
+ }
+
+ section table { clear: both;
+   margin-top: 10px;
+   
+   
+ }
+
+ section .imgg{
+  
+   display: flex;
+   justify-content: center;
+   text-align: center;
+ }
+ section .imgg ul{ 
+   width: 320px;
+   
+   
+ }
+ 
+ section .imgg li{
+   border: 1px solid #875b38;
+
+   
+ }
+
+ section .imggg{
+   text-align: center;
+   display: flex;
+   justify-content: center;
+ }
+ section .imggg ul{ 
+   width: 320px;
+   
+   
+ }
+ 
+ section .imggg li{
+   border: 1px solid #875b38;
+   
+ }
+
+ section .imgggg{
+   text-align: center;
+   display: flex;
+   justify-content: center;
+ }
+ section .imgggg ul{ 
+   width: 320px;
+   
+   
+ }
+ 
+ section .imgggg li{
+   border: 1px solid #875b38;
+   
+ }
+
+ footer{ border: 1px solid #875b38;
+   
+   text-align: center;
+   margin-top: 20px;
+ }
