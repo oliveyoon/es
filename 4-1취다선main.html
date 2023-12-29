@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/4-1취다선main.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+
+    <style>
+      * {
+          margin: 0;
+          padding: 0;
+      }        
+     
+      /* swiper */
+      .visual .swiper-container{
+         max-width:300px;
+        
+          margin: 0 auto;            
+          position: relative; 
+          top: 200px;
+      }
+      .visual img{
+          vertical-align: top;
+          width: 100%;
+      }
+      /* swiper 하단 버튼 디자인  */
+      .visual .swiper-pagination{
+          position: absolute;
+          left: 0;
+          bottom: 3%;
+          z-index: 100;            
+          text-align: center;
+      }
+      .visual .swiper-pagination .swiper-pagination-bullet{
+          width: 12px;
+          height: 12px;
+          background: #fff;
+          opacity: 1;
+      }
+      .visual .swiper-pagination .swiper-pagination-bullet-active{
+          background: #ff6600;
+      }
+      /* swiper left, right 버튼 디자인  */
+      .visual .arrow{
+          position: absolute;
+          top: 50%;
+          font-size: 25px;
+          background: #000;
+          color: #fff;
+          z-index: 100;
+          line-height: 1;
+          margin-top: -20px;
+          padding: 10px;
+          border-radius: 5px;
+          cursor: pointer;
+      }
+      .visual .next{
+          left: 10px;
+      }
+      .visual .prev{
+          right: 10px;
+      }
+     
+  </style>
+  <script src="jquery-3.7.1.min.js"></script>    
+</head>
+<body>
+ 
+
+       <a href="4-0취다선.html"> <h1>CHUIDASUN</h1></a> 
+        <h5>TEA & MEDITAION</h5>
+      
+<nav role="navigation">
+  <ul id="main-menu">
+    
+    <li><a href="#">Program</a>
+      <ul id="sub-menu">
+        <li><a href="#" aria-label="subemnu">YOGA</a></li>
+        <li><a href="#" aria-label="subemnu">TEA</a></li>
+        <li><a href="#" aria-label="subemnu">MEDITAION</a></li>
+        
+      </ul>
+    </li>
+    <li><a href="#">Resort</a>
+      <ul id="sub-menu">
+        <li><a href="#" aria-label="subemnu">Single bed</a></li>
+        <li><a href="#" aria-label="subemnu">Superior double</a></li>
+        <li><a href="#" aria-label="subemnu">Family room</a></li>
+        <li><a href="#" aria-label="subemnu">Restorant</a></li>
+      </ul>
+    </li>
+    <li><a href="#">About Us</a>
+      <ul id="sub-menu">
+        <li><a href="#" aria-label="subemnu">About</a></li>
+        <li><a href="#" aria-label="subemnu">Contact us</a></li>
+        <li><a href="#" aria-label="subemnu">submenu</a></li>
+        
+      </ul>
+    </li>
+    
+  </ul>
+</nav>
+<img id="one"   src="image/취다선로고.png">
+<div class="visual">
+  <div class="swiper-container">
+      <div class="swiper-wrapper">
+          <div class="swiper-slide"><a href="#"><img src="image/113.jpg" alt="HTML"></a></div>
+          <div class="swiper-slide"><a href="#"><img src="image/11.jpg" alt="CSS"></a></div>
+          <div class="swiper-slide"><a href="#"><img src="image/111.jpg" alt="Javascript"></a></div>
+          <div class="swiper-slide"><a href="#"><img src="image/112.jpg" alt="jQuery"></a></div>
+      </div>
+      <div class="swiper-pagination"></div>
+      <div class="next arrow">&lt;</div>
+      <div class="prev arrow">&gt;</div>
+  </div>
+</div>
+   
+
+
+ <section> 
+  
+  <p>
+    Moment to moment<br>
+    <br>
+    The result of a purely shining process and <br>
+    Our dignity as we remain in this space breathe and manifest together.<br>
+    Life is dancing through you as your breath rises.<br>
+    I hope you take the time to savor this moment.<br>
+</p>
+
+
+</section>
+
+<footer>
+
+</footer>
+<script src="swiper.min.js"></script>
+    <script>
+        /* 자동실행, left, right버튼 기능 api 추가 */
+        var swiper = new Swiper('.swiper-container', {
+            autoplay: {
+                delay: 2000,
+                disableOnInteraction: false
+            },
+            slidesPerView: 1,
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.next',
+                prevEl: '.prev',
+            }
+        });
+    </script>
+
+
+    
+</body>
+</html>

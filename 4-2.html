@@ -1,0 +1,310 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <title>CSS</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="css/4-2.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+  <style>
+
+
+.pic p{ border: 1px solid wheat;
+  max-width:910px;
+height: 50px;
+background-color: wheat;
+text-align: center;
+font-size: 30px;
+
+
+}
+a:link{
+  text-decoration: none;
+  color: #000;
+
+}
+a:visited{
+  text-decoration: none;
+  color:black;
+}
+a:visited{
+  text-decoration: none;
+  color:black;
+
+}
+
+    body{
+      background-color: #ff6600;
+    }
+   .visual .swiper-container{
+         max-width:580px;
+        
+          margin: 0 auto;            
+          position: relative; 
+          top: 200px;
+      }
+      .visual img{
+          vertical-align: top;
+          width: 100%;
+      }
+      /* swiper 하단 버튼 디자인  */
+      .visual .swiper-pagination{
+          position: absolute;
+          left: 0;
+          bottom: 3%;
+          z-index: 100;            
+          text-align: center;
+      }
+      .visual .swiper-pagination .swiper-pagination-bullet{
+          width: 12px;
+          height: 12px;
+          background: #fff;
+          opacity: 1;
+      }
+      .visual .swiper-pagination .swiper-pagination-bullet-active{
+          background: #ff6600;
+      }
+      /* swiper left, right 버튼 디자인  */
+      .visual .arrow{
+          position: absolute;
+          top: 50%;
+          font-size: 25px;
+          background: #000;
+          color: #fff;
+          z-index: 100;
+          line-height: 1;
+          margin-top: -20px;
+          padding: 10px;
+          border-radius: 5px;
+          cursor: pointer;
+      }
+      .visual .next{
+          left: 10px;
+      }
+      .visual .prev{
+          right: 10px;
+      }
+   
+    #jb-container {
+    width: 940px;
+    margin: 10px auto;
+    padding: 20px;
+    border: none;
+   
+  }
+  #jb-header {
+    padding: 20px;
+    margin-bottom: 20px;
+    border: none;
+
+  }
+
+  #jb-header button{
+    border-radius: 150px;
+    border-color: #403D1E;
+    margin-top: 5px;
+  }
+  #jb-header input{
+    border-radius: 150px;
+    height: 25px;
+    border: 3px solid #403D1E;
+  }
+
+  #jb-header h1{ font-size: 50px;
+
+  }
+  #jb-header h6{
+    display: inline;
+    float: right;
+  }
+
+
+  #jb-content {
+    width: 580px;
+    height: 400px;
+    padding: 0.1px;
+    margin-bottom: 20px;
+    margin-top: 30px;
+    float: left;
+   
+  }
+  #jb-sidebar {
+    width: 260px;
+    padding: 20px;
+    margin-bottom: 20px;
+    float: right;
+    border: 2px solid #403D1E;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    
+    text-align: center;
+  
+   
+  }
+  .Thank{
+   margin-top: 20px;
+   padding: 10px;
+  }
+
+  .section{
+    width: auto;
+    
+  }
+  #jb-footer {
+    clear: both;
+    padding: 20px;
+   
+    margin-top: 20px;
+  }
+  @media ( max-width: 480px ) {
+    #jb-container {
+      width: auto;
+    }
+    #jb-content {
+      float: none;
+      width: auto;
+    }
+    #jb-sidebar {
+      float: none;
+      width: auto;
+    }
+  }
+  </style>
+   <script src="jquery-3.7.1.min.js"></script>  
+  
+  </head>
+  <body>
+   
+    <div id="jb-container">
+      <div id="jb-header">
+        <h1>Chuidasun</h1>
+        <h6><button type="submit">검색</button></h6>
+      <h6><input type="text" name="query" value=""></h6>
+      
+      
+      </div>
+
+      
+      <nav role="navigation">
+        <ul id="main-menu">
+          
+          <li><a href="#">Program</a>
+            <ul id="sub-menu">
+              <li><a href="#" aria-label="subemnu">YOGA</a></li>
+              <li><a href="#" aria-label="subemnu">TEA</a></li>
+              <li><a href="#" aria-label="subemnu">MEDITAION</a></li>
+              
+            </ul>
+          </li>
+          <li><a href="#">Resort</a>
+            <ul id="sub-menu">
+              <li><a href="#" aria-label="subemnu">Single bed</a></li>
+              <li><a href="#" aria-label="subemnu">Superior double</a></li>
+              <li><a href="#" aria-label="subemnu">Family room</a></li>
+              <li><a href="#" aria-label="subemnu">Restorant</a></li>
+            </ul>
+          </li>
+          <li><a href="#">About Us</a>
+            <ul id="sub-menu">
+              <li><a href="#" aria-label="subemnu">About</a></li>
+              <li><a href="#" aria-label="subemnu">Contact us</a></li>
+              <li><a href="#" aria-label="subemnu">submenu</a></li>
+              
+            </ul>
+          </li>
+          
+        </ul>
+      </nav>
+      <div id="jb-content">
+        
+        <img src="image/클라스2.jpg">
+        <div class="Thank">
+        <h1>Thank you</h1>
+        <p>Chuidasun will provide you with</p>
+        <p>comfort and peaceful.</p>
+      </div>
+      </div>
+      
+     
+      <div id="jb-sidebar">
+        <h2>MEDITAION</h2>
+        <ul>
+          <li><a href="#"> ＆아침명상</a></li>
+          <li><a href="#">＆차명상</a></li>
+          <li><a href="#">＆음악명상</a></li>
+          <li><a href="#">＆크리스탈 싱잉볼 명상</a></li>
+          <li><a href="#">＆히말라야 싱잉볼 명상</a></li>
+        </ul>
+      </div>
+      
+      <div id="jb-sidebar">
+        <h2>YOGA</h2>
+        <ul>
+          <li><a href="#"> ＆차크라 명상요가</a></li>
+          <li><a href="#">＆빈야사</a></li>
+          <li><a href="#">＆하타요가</a></li>
+          <li><a href="#">＆인요가</a></li>
+          <li><a href="#">＆릴렉스 요가</a></li>
+        </ul>
+      </div>
+
+      <div class="section">
+        <p> 만트라는 나를 다독여주는 진실하고 신성한 </p>
+        <p> 진언 입니다.작고 연약한 나를 내 안의 큰 나에게 맡기어 봅니다. </p>
+      </div>
+      
+
+      <div class="visual">
+        <div class="swiper-container">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide"><a href="#"><img src="image/113.jpg" alt="HTML"></a></div>
+                <div class="swiper-slide"><a href="#"><img src="image/11.jpg" alt="CSS"></a></div>
+                <div class="swiper-slide"><a href="#"><img src="image/111.jpg" alt="Javascript"></a></div>
+                <div class="swiper-slide"><a href="#"><img src="image/112.jpg" alt="jQuery"></a></div>
+            </div>
+            <div class="swiper-pagination"></div>
+            <div class="next arrow">&lt;</div>
+            <div class="prev arrow">&gt;</div>
+        </div>
+      </div>
+
+      <div class="pic">
+           <p> Chuidasun SNS</p>
+  <table>
+<tr><td><img src="image/취다선 명상.jpg" width="300px" height="300px"></td> <td><img src="image/1.jpg" width="300px" height="300px"></td> <td><img src="image/2.jpg" width="300px" height="300px"></td></tr>
+<tr><td><img src="image/취다선 요가.jpg" width="300px" height="300px"></td> <td><img src="image/3.jpg" width="300px" height="300px"></td> <td><img src="image/SCH.PNG" width="300px" height="300px"></td></tr>
+  </table>
+
+</div>
+      
+         
+
+      <div id="jb-footer">
+        <p>Copyright</p>
+      </div>
+    </div>
+
+
+
+    <script src="swiper.min.js"></script>
+    <script>
+        /* 자동실행, left, right버튼 기능 api 추가 */
+        var swiper = new Swiper('.swiper-container', {
+            autoplay: {
+                delay: 2000,
+                disableOnInteraction: false
+            },
+            slidesPerView: 1,
+            loop: true,
+            pagination: {
+                el: '.swiper-pagination',
+                clickable: true,
+            },
+            navigation: {
+                nextEl: '.next',
+                prevEl: '.prev',
+            }
+        });
+    </script>
+
+  </body>
+</html>

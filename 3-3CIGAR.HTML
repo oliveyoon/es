@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/3-3CIGAR.CSS">
+    <script>
+      var tabBtn = $("#tab-btn > ul > li");     //각각의 버튼을 변수에 저장
+var tabCont = $("#tab-cont > div");       //각각의 콘텐츠를 변수에 저장
+
+//컨텐츠 내용을 숨겨주세요!
+tabCont.hide().eq(0).show();
+
+tabBtn.click(function(){
+  var target = $(this);         //버튼의 타겟(순서)을 변수에 저장
+  var index = target.index();   //버튼의 순서를 변수에 저장
+  tabBtn.removeClass("active");    //버튼의 클래스를 삭제
+  target.addClass("active");       //타겟의 클래스를 추가
+  tabCont.css("display","none");
+  tabCont.eq(index).css("display","block");
+});
+     
+     </script>
+     
+</head>
+<body>
+    <header>
+      <div id="tab-menu">
+        <div id="tab-btn">
+          <ul>
+            <li class="active"><a href="3-3CIGAR.HTML">CIGAR?</a></li>
+            <li><a href="3-3-1ciga.html">Basic common sense</a></li>
+            <li><a href="3-3-2ciga.html">For beginner</a></li>
+            <li><a href="3-3-3cigar.html">New cigar</a></li>
+           
+          </ul>
+        </div>
+        <div id="tab-cont">
+          <p> &nbsp; 말린 담뱃잎을 말아 필터에 거르지 않고 피우는 담배를 흔히 시가라고 부릅니다.</p>
+          <p>보통 담배는 허파로 니코틴을 흡수함으로써 맛을 느끼지만, 시가는 연기를 들이마시지 않고 입에서</p>
+          <p>돌리며 코와 혀로 향을 음이합니다.때문에 시가는 맛만큼 향이 중요합니다.보관과 숙성에 따라</p>
+          <p>품질이 달라지는 등 와인과 닮은 점이 많습니다.</p>
+       
+        </div>
+      </div>
+      <img src="image/man-7923162_1920.jpg" width="650px" height="700px">
+
+      <a href="3-1webresol.html" id="back">BACK</a>
+         
+    </header>
+
+    
+</body>
+</html>

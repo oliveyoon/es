@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/3-3-1ciga.css">
+    <script>
+      var tabBtn = $("#tab-btn > ul > li");     //각각의 버튼을 변수에 저장
+var tabCont = $("#tab-cont > div");       //각각의 콘텐츠를 변수에 저장
+
+//컨텐츠 내용을 숨겨주세요!
+tabCont.hide().eq(0).show();
+
+tabBtn.click(function(){
+  var target = $(this);         //버튼의 타겟(순서)을 변수에 저장
+  var index = target.index();   //버튼의 순서를 변수에 저장
+  tabBtn.removeClass("active");    //버튼의 클래스를 삭제
+  target.addClass("active");       //타겟의 클래스를 추가
+  tabCont.css("display","none");
+  tabCont.eq(index).css("display","block");
+});
+     
+     </script>
+     
+</head>
+<body>
+    <header>
+      <div id="tab-menu">
+        <div id="tab-btn">
+          <ul>
+            <li class="active"><a href="3-3CIGAR.HTML">CIGAR?</a></li>
+            <li><a href="3-3-1ciga.html">Basic common sense</a></li>
+            <li><a href="3-3-2ciga.html">For beginner</a></li>
+            <li><a href="3-3-3cigar.html">New cigar</a></li>
+           
+           
+          </ul>
+        </div>
+        <div id="tab-cont">
+          <p> &nbsp; 시가의 맛의 강도는 5단계로 구분됩니다.</p>
+          <p>mild ,mild to medium,medium,medium to full, full</p>
+          <p>생산 제조국을 보면 대략적으로 시가의 독한 정도를 알 수 있습니다.</p>
+          <p>milld-자메이카,middle-도미니카 공화국,full-쿠바 멕시코 온두라스 니카라구아</p>
+          <p> 시가의 크기는 크게 굵기(직경, diameter, ring, 또는 guage)와 길이(length)로 나타냅니다.</p>
+    <p>  즉, 시가의 Spec.에 5.00 x 44 라고 나타나 있다면 길이가 5인치이고</p>
+    <p> 직경이 44/64인치 (또는 44 게이지) 굵기의 시가라는 의미입니다.</p>
+        </div>
+      </div>
+      <img src="image/man-7923162_1920.jpg" width="650px" height="700px">
+      <a href="3-1webresol.html" id="back">BACK</a>
+
+      
+         
+    </header>
+
+    
+</body>
+</html>

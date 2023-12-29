@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+ <html lang="en">
+ <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/2-5iphone_cigar.css">
+ <script>
+  function Show(element) {
+        var before = document.getElementsByClassName("active")[0] ;   
+        if (before && document.getElementsByClassName("active")[0] != element) {
+            before.nextElementSibling.style.maxHeight = null;   
+            before.classList.remove("active");                  
+        }
+        element.classList.toggle("active");        
+        
+
+        var content = element.nextElementSibling;
+        if (content.style.maxHeight != 0) {         
+            content.style.maxHeight = null;         
+        } else {
+            content.style.maxHeight = content.scrollHeight + "px";  
+        }
+    }
+ </script>
+ 
+ 
+  </head>
+ 
+ 
+ <body>
+    <header>
+     
+
+  <div class="middle"> 
+    <a href="2-1iphone.html"> <h1>RESOLVER</h1></a>   
+
+<button class="title" onclick="Show(this);">What is a cigar</button>
+<div class="content">
+  말린 담뱃잎을 말아 필터에 거르지 않고
+            <br> 
+            <br> 
+            피우는 담배를 흔히 시가라고 부릅니다.
+            <br>
+            <br> 
+            보통 담배는 허파로 니코틴을 흡수함으로써 
+            <br>
+            <br> 
+            맛을 느끼지만,시가는 연기를 들이마시지 
+            <br>
+            <br> 
+            않고 입에서 돌리며 코와 혀로 향을 음미합니다.
+            <br>
+            <br> 
+            때문에 시가는 맛만큼 향이 중요합니다.
+            <br>
+            <br> 
+            보관과 숙성에 따라 품질이 달라지는 등
+            <br>
+            <br> 
+            와인과 닮은 점이 많습니다.
+</div>
+
+<br>
+
+<button class="title" onclick="Show(this);">Basic common sense</button>
+<div class="content">
+  시가의 맛의 강도는 5단계로 구분됩니다.
+        <br>
+            mild ,mild to medium,medium,
+            <br>
+            <br> 
+            medium to full, full
+            <br>
+            <br> 
+            생산 제조국을 보면 대략적으로 시가의 독한 정도를 알 수 있습니다.
+            <br>
+            <br> 
+            milld-자메이카,middle-도미니카 공화국,
+            <br>
+            <br> 
+            full-쿠바 멕시코 온두라스 니카라구아
+            <br>
+            <br> 
+            시가의 크기는 크게 굵기(직경,ring, 또는 guage)와
+            <br> 
+            <br> 
+            길이(length)로 나타냅니다.  
+</div>
+<br> 
+<button class="title" onclick="Show(this);">For beginners</button>
+<div class="content">
+  <p> 몬테크리스토 No.4</p>
+  <br> 
+  <p>로미오 이 훌리에타</p>
+  <br> 
+  <p>코히바 시글로 ll</p>
+ 
+</div>
+<br>
+<button class="title" onclick="Show(this);">a new cigar</button>
+<div class="content">
+  <p> FLOR DE SELVA_ROBUSTO
+    <br>
+    maya selvad의 flor de selva는 온두리스에서 손수 만든 미디엄 바디의 롱 필러 시가 입니다.
+    프로필은 삼나무와 말린 과일의 터치가 있는 우디한 맛입니다.
+    Length 121mm /Ringgauge 50 sizs/ Robusto strength medium</p>
+    <br> 
+  <p>cohiba behike
+    <br>
+    하바노스 역사상 가장 독덤적인 라인의 코히바 베히케는 medio tiempo라고 불리는 토바코 잎으로 블렌딩 되어
+    특유의 고급스러운 맛과 향으로 시가 애호가를 사로잡고 있는 프리미엄 중의 프리미엄 시가 입니다.
+    총 3가지 사이즈로 코히바 베리케는 링게이와 길이 별로 52,54,56으로 나뉘어져 있습니다.</p>
+  
+ 
+</div>
+
+<br>
+
+
+
+<img src="image/아이폰-서브.png" width="250px" height="250px">
+
+
+</div>
+
+
+</header>
+
+
+   
+    
+ </body>
+ </html>

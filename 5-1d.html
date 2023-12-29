@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/5-1d.css">
+    <script>
+        function init(){
+    
+    //estrelas
+    
+    var style = ["style1", "style2", "style3", "style4"];
+    var tam = ["tam1", "tam1", "tam1", "tam2", "tam3"];
+    var opacity = ["opacity1", "opacity1", "opacity1", "opacity2", "opacity2", "opacity3"];
+    
+    function getRandomArbitrary(min, max) {
+      return Math.floor(Math.random() * (max - min)) + min;
+    }
+    
+    var estrela = "";
+    var qtdeEstrelas = 250;
+    var noite = document.querySelector(".constelacao");
+    var widthWindow = window.innerWidth;
+    var heightWindow = window.innerHeight;
+    
+    for (var i = 0; i < qtdeEstrelas; i++) {
+      estrela += "<span class='estrela " + style[getRandomArbitrary(0, 4)] + " " + opacity[getRandomArbitrary(0, 6)] + " "
+      + tam[getRandomArbitrary(0, 5)] + "' style='animation-delay: ." +getRandomArbitrary(0, 9)+ "s; left: "
+      + getRandomArbitrary(0, widthWindow) + "px; top: " + getRandomArbitrary(0, heightWindow) + "px;'></span>";
+    }
+    
+    noite.innerHTML = estrela;
+    
+    //meteoros
+    
+    var numeroAleatorio = 5000;
+    
+    setTimeout(function(){
+      carregarMeteoro();
+    }, numeroAleatorio);
+    
+    function carregarMeteoro(){
+      setTimeout(carregarMeteoro, numeroAleatorio);
+      numeroAleatorio = getRandomArbitrary(5000, 10000);
+      var meteoro = "<div class='meteoro "+ style[getRandomArbitrary(0, 4)] +"'></div>";
+      document.getElementsByClassName('chuvaMeteoro')[0].innerHTML = meteoro;
+      setTimeout(function(){
+        document.getElementsByClassName('chuvaMeteoro')[0].innerHTML = "";
+      }, 1000);
+    }
+    
+    }
+    
+    window.onload = init;
+    
+      </script>
+
+</head>
+<body>
+    <header>
+        <table class="aside" border="1px">
+            <tr><td></td></tr>
+         </table>
+       
+        
+           
+             <div class="middle">
+            <a href="5-2카사.HTML"target="_blank" >CASAMIGOS</a>
+            <br>
+            <a href="5-3컬티.html"target="_blank" >CULTI</a>
+                 <br>
+             
+                 <br>
+                   
+                        </div>
+                <img src="image/5-1.jpg" height="440" width="200">
+            
+              <P> <a href="1-1main.html"> ◀back</a></P>  
+              <div class="noite"></div>
+
+              <div class="constelacao"></div>
+            
+              <div class="lua">
+                <div class="textura"></div>
+              </div>
+            
+              <div class="chuvaMeteoro"></div>
+            
+              <div class="floresta">
+
+            
+       
+         
+    </header>
+
+    
+</body>
+</html>

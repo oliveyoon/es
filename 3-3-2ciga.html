@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/3-3-2cigar.css">
+    <script>
+      var tabBtn = $("#tab-btn > ul > li");     //각각의 버튼을 변수에 저장
+var tabCont = $("#tab-cont > div");       //각각의 콘텐츠를 변수에 저장
+
+//컨텐츠 내용을 숨겨주세요!
+tabCont.hide().eq(0).show();
+
+tabBtn.click(function(){
+  var target = $(this);         //버튼의 타겟(순서)을 변수에 저장
+  var index = target.index();   //버튼의 순서를 변수에 저장
+  tabBtn.removeClass("active");    //버튼의 클래스를 삭제
+  target.addClass("active");       //타겟의 클래스를 추가
+  tabCont.css("display","none");
+  tabCont.eq(index).css("display","block");
+});
+     
+     </script>
+     
+</head>
+<body>
+    <header>
+      <div id="tab-menu">
+        <div id="tab-btn">
+          <ul>
+            <li class="active"><a href="3-3CIGAR.HTML">CIGAR?</a></li>
+            <li><a href="3-3-1ciga.html">Basic common sense</a></li>
+            <li><a href="3-3-2ciga.html">For beginner</a></li>
+            <li><a href="3-3-3cigar.html">New cigar</a></li>
+           
+           
+          </ul>
+        </div>
+        <div id="tab-cont">
+          <ul>
+            <li><img src="image/Tabak especial oscuro.PNG" width="150px" height="150px"> </li>
+          <li>몬테크리스토 No.4</li>
+          </ul>
+
+          <ul>
+            <li><img src="image/THE GRIFFINOS.PNG" width="150px" height="150px"> </li>
+          <li>로미오 이 훌리에타</li>
+          </ul>
+          
+          <ul>
+            <li><img src="image/SWAMP THANG.PNG" width="150px" height="150px"> </li>
+          <li>코히바 시글로 ll</li>
+          </ul>
+         
+
+       
+        </div>
+      </div>
+      <img src="image/man-7923162_1920.jpg" width="650px" height="700px">  
+      <a href="3-1webresol.html" id="back">BACK</a>
+    </header>
+
+    
+</body>
+</html>
